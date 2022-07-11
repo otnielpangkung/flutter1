@@ -7,9 +7,9 @@ import 'package:flutter_application_1/pages/getStarted.dart';
 import 'package:flutter_application_1/pages/home.dart';
 import 'package:flutter_application_1/pages/homePhotos.dart';
 import 'package:flutter_application_1/pages/signUp.dart';
-import 'package:flutter_application_1/pages/splashPage.dart';
+
 import 'package:flutter_application_1/pages/successCheckout.dart';
-import '../shared/theme.dart';
+
 
 void main() {
   runApp(const MyApp());

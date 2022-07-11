@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:bloc/bloc.dart';
-// import 'blo';
-// import 'bloc';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import '../cubit/page_cubit.dart';
 
-class NavigationBar extends StatelessWidget {
+class NavigationMenu extends StatelessWidget {
   final double index;
-
-  const NavigationBar({Key? key, required this.index}) : super(key: key);
+  final String icon;
+  const NavigationMenu({Key? key, required this.index, required this.icon}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return   GestureDetector(
+    return GestureDetector(
       onTap: () {
         context.read<PageCubit>().setPage(index);
       },
