@@ -23,16 +23,13 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<PageCubit, int>(
-      builder: (context, currentIndex) {
+    
         return Scaffold(
           body: Stack(
-            children: [bodyHome(currentIndex), navigationBar()],
+            children: [bodyHome(), navigationBar()],
           ),
         );
-      },
-    );
-  }
+      }
 
   Align navigationBar() {
     return Align(
@@ -55,18 +52,18 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Widget bodyHome(currentIndex) {
-    switch (currentIndex) {
-      case 0:
-        return GoHomePage();
-      case 1:
-        return BookPage();
-      case 2:
-        return CardPage();
-      case 3:
-        return SettingPage();
-      default:
-    }
+  Widget bodyHome() {
+    // switch () {
+    //   case 0:
+    //     return GoHomePage();
+    //   case 1:
+    //     return BookPage();
+    //   case 2:
+    //     return CardPage();
+    //   case 3:
+    //     return SettingPage();
+    //   default:
+    // }
     return GoHomePage();
   }
 
